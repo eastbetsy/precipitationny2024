@@ -1,0 +1,52 @@
+body {
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background-color: #eaf2f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/*container id*/
+#container {
+    background-color: white;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 960px;
+}
+/*bar chart title*/
+#title {
+    font-size: 2rem;
+    color: #1a5276;
+    margin-bottom: 2rem;
+}
+
+/*color of each bar*/
+.bar {
+    fill: #5dade2;
+}
+/*color when bar is hovered*/
+.bar:hover {
+    fill: #2e86c1;
+}
+/*size of tick on axes*/
+.tick {
+    font-size: 12px;
+}
+/*tooltip - text when hovered over bar*/
+#tooltip {
+    position: absolute;
+    background-color: rgba(26,82,118,0.9);
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    pointer-events: none;
+    opacity: 0;
+    font-size: 14px;
+    transition: opacity 0.2s;
+}
